@@ -1,0 +1,8 @@
+[package]
+name = "echo"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+futures = "0.3.13"
+nix = "0.20.0"
