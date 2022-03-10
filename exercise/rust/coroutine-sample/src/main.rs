@@ -31,7 +31,7 @@ fn main() {
     let mut hello = task.hello.lock().unwrap();
 
     // 停止と再開の繰り返し
-    hello.as_mut().poll(&mut ctx);
-    hello.as_mut().poll(&mut ctx);
-    hello.as_mut().poll(&mut ctx);
+    let _ = hello.as_mut().poll(&mut ctx);
+    let _ = hello.as_mut().poll(&mut ctx);
+    let _ = hello.as_mut().poll(&mut ctx);
 }
